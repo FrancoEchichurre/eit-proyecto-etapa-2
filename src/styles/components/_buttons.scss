@@ -1,0 +1,177 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.modal__close-button {
+   background-color: transparent;
+   border: none;
+}
+
+.btn__purchase {
+   padding: 12px 24px;
+   font-size: 1rem;
+   font-weight: bold;
+   border-radius: 0.5rem;
+   border: none;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   
+   &:disabled {
+       opacity: 0.5;
+       cursor: not-allowed;
+   }
+   
+   &:not(:disabled):hover {
+       background-color: darken($primary-color, 10%);
+   }
+}
+
+.btn__processing {
+   background-color: #6c9bd1 !important;
+   cursor: not-allowed;
+   
+   &:hover {
+       background-color: #6c9bd1 !important;
+   }
+}
+
+.btn__success {
+   background-color: #28a745 !important;
+   
+   &:hover {
+       background-color: #28a745 !important;
+   }
+}
+
+.nav-button {
+ display: block;
+ padding: 10px 16px;
+ margin: 10px 9px;
+ background-color: #245de2cb;
+ color: white;
+ text-decoration: none;
+ border-radius: 4px;
+ border: none;
+ font-weight: 500;
+ transition: all 0.3s ease;
+ cursor: pointer;
+}
+
+.nav-button:hover {
+ background-color: #0056b3;
+ transform: translateY(-1px);
+ text-decoration: none;
+ color: white;
+}
+
+.nav-button:active {
+ transform: translateY(0);
+}
+
+.nav-button.active {
+ background-color: #28a74667;
+ color: white;
+}
+
+.nav-button.active:hover {
+ background-color: #28a74667;
+}
+
+.nav-button-outline {
+ display: inline-block;
+ padding: 8px 16px;
+ margin: 0 4px;
+ background-color: transparent;
+ color: #007bff;
+ text-decoration: none;
+ border: 2px solid #007bff;
+ border-radius: 4px;
+ font-weight: 500;
+ transition: all 1s ease;
+ cursor: pointer;
+}
+
+.nav-button-outline:hover {
+ background-color: #007bff;
+ color: white;
+ text-decoration: none;
+}
+
+.navbarnavigation ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+ display: flex;
+ align-items: center;
+}
+
+.navbarnavigation li {
+ margin: 0;
+}
+
+.btn {
+   border-radius: 0.5rem;
+   padding: 0.5rem 1rem;
+   font-size: 0.75rem;
+   
+   &__primary {
+       background-color: $primary-color;
+       color: $white-color;
+       border: 2px solid $strong-primary-color;
+       
+       svg {
+           width: 1rem;
+           fill: $white-color;
+       } 
+       
+       &:hover {
+           background-color: $strong-primary-color;
+       }
+       
+       &-outline {
+           background-color: transparent;
+           color: $primary-color;
+           border: 2px solid $primary-color;
+           
+           svg {
+               width: 1rem;
+               fill: $primary-color;
+           } 
+           
+           &:hover {
+               color: $strong-primary-color;
+               border-color: $strong-primary-color;
+           }
+       }
+   }
+   
+   &__secondary {
+       background-color: $secondary-color;
+       color: $white-color;
+       border: 2px solid $strong-secondary-color;
+       
+       svg {
+           width: 1rem;
+           fill: $white-color;
+       } 
+       
+       &:hover {
+           background-color: $strong-secondary-color;
+       }
+       
+       &-outline {
+           background-color: transparent;
+           color: $secondary-color;
+           border: 2px solid $secondary-color;
+           
+           svg {
+               width: 1rem;
+               fill: $secondary-color;
+           } 
+           
+           &:hover {
+               color: $strong-secondary-color;
+               border-color: $strong-secondary-color;
+           }
+       }
+   }
+}

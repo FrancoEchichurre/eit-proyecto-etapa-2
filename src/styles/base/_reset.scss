@@ -1,0 +1,45 @@
+@use "../utils/variables" as *;
+
+body {
+   background-color: $body-bg-color;
+   margin: 4.5rem 0;
+   padding-top: 4.5rem;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+main {
+   min-height: calc(100vh - (4.5rem + 2rem + 64px));
+}
+
+a {
+   color: unset;
+   text-decoration: none;
+}
+
+h1 {
+   font-size: 3rem;
+   text-align: left;
+   margin: 0;
+}
+
+h2 {
+   text-align: center;
+   font-size: 2rem;
+   padding: 1rem;
+   margin: 0;
+}
+
+h3 {
+   margin: 0;
+}
+
+.page-title {
+   text-align: left;
+   margin-left: -11rem;
+   margin-right: auto;
+   font-size: larger;
+   color: #e5e5fd;
+}

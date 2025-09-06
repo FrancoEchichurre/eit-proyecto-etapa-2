@@ -1,0 +1,67 @@
+//Breakpoints
+$grid-breakpoints: (
+ xs: 0,
+ sm: 576px,
+ md: 768px,
+ lg: 992px,
+ xl: 1200px,
+ xxl: 1400px
+);
+
+$grid-width: (
+ xs: 360px,
+ sm: 520px,
+ md: 720px,
+ lg: 880px,
+ xl: 1120px,
+ xxl: 1200px
+);
+
+// Colors
+$primary-color: #0A2463;
+$strong-primary-color: #1E1B18;
+$light-primary-color: #3E92CC;
+$superlight-primary-color: #b9d9fdd7;
+
+$secondary-color: #D8315B;
+$strong-secondary-color: #B91C47;
+$light-secondary-color: #F07A9A;
+$card-color: #f1f1f1;
+
+$footer-text-color: #0A2463;
+$footer-bg: #0A2463;
+$footer-bg-text: #FFFAFF;
+
+$black-color: #1E1B18;
+$white-color: #FFFAFF;
+
+$success-color: #059669;
+$danger-color: #DC2626;
+$warning-color: #D97706;
+
+// Layout
+$body-bg-color: $superlight-primary-color;
+$navbar-bg-color: $primary-color;
+
+// Drawer
+$drawer-bg-color: #4480aaea;
+
+// Cart
+$overlay-color: rgba(0, 0, 0, 0.6);
+
+//Grid
+$grid-columns: 12;
+
+//Spacings
+$spacings: (
+   m: margin,
+   mt: margin-top,
+   mb: margin-bottom,
+   ml: margin-left,
+   mr: margin-right,
+   p: padding,
+   pt: padding-top,
+   pb: padding-bottom,
+   pl: padding-left,
+   pr: padding-right,
+);

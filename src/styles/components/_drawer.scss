@@ -1,0 +1,40 @@
+@use 'sass:map';
+@use "../utils/variables" as *;
+
+.drawer__overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   display: flex;
+   padding: 2rem;
+   margin-left: auto;
+   border-radius: 0 0 16px 0;
+   align-items: flex-start;
+   justify-content: left;
+   background-color: $drawer-bg-color;
+   height: 60vh;
+   width: 60vw;
+   z-index: 3;
+}
+
+.drawer__content {
+   background-color: $navbar-bg-color;
+   height: 100vh;
+   width: 60vw;
+   padding: 1.5rem;
+   @media screen and (max-width: map-get($grid-breakpoints, md)) {
+       width: 30rem;
+   }
+}
+
+.drawer-button {
+   background: rgba(255, 255, 255, 0.2);
+   border: none;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
